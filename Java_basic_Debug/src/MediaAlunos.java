@@ -8,7 +8,7 @@ public class MediaAlunos {
 
  
         String[] alunos = {"Natanael","Marta", "Helena"};
-        int media =  CalculaMediaAluno (alunos, scan);
+        double media =  CalculaMediaAluno (alunos, scan);
         
 
         System.out.println("media Turma:" + media );
@@ -16,12 +16,12 @@ public class MediaAlunos {
       
     }
 
-    public static int CalculaMediaAluno (String[] alunos, Scanner scan){
-        int soma = 0;
+    public static double CalculaMediaAluno (String[] alunos, Scanner scan){
+        double soma = 0;
 
             for (String aluno : alunos) {
                 System.out.println("Aluno nota : " + aluno );
-                int nota = scan.nextInt();
+                double nota = scan.nextDouble();
                 soma += nota;
                 
             }
